@@ -29,6 +29,11 @@ main {
 
 }
 
+.title {
+  text-align: center;
+  color: #ddd;
+}
+
 .container {
   max-width: 90%;
   width: 120rem;
