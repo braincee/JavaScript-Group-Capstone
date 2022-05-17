@@ -88,7 +88,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.left-nav {\r\n    display: flex;\r\n    background-color: aqua;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  width: 100%;\r\n}\r\n\r\nmain {\r\n  background-color: rgb(47, 47, 49);\r\n}\r\n\r\n.container {\r\n  max-width: 90%;\r\n  width: 120rem;\r\n  margin: 0 auto;\r\n}\r\n\r\nfooter {\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  display: flex;\r\n  height: 52px;\r\n  font-size: 9px;\r\n  position: fixed;\r\n  bottom: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 95.5%;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;;EAGE,sBAAsB;AACxB;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,WAAW;EACX,eAAe;EACf,WAAW;AACb;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,cAAc;EACd,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,8BAA8B;EAC9B,WAAW;EACX,eAAe;EACf,aAAa;EACb,YAAY;EACZ,cAAc;EACd,eAAe;EACf,SAAS;EACT,uBAAuB;EACvB,mBAAmB;EACnB,YAAY;AACd","sourcesContent":["*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.left-nav {\r\n    display: flex;\r\n    background-color: aqua;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  width: 100%;\r\n}\r\n\r\nmain {\r\n  background-color: rgb(47, 47, 49);\r\n}\r\n\r\n.container {\r\n  max-width: 90%;\r\n  width: 120rem;\r\n  margin: 0 auto;\r\n}\r\n\r\nfooter {\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  display: flex;\r\n  height: 52px;\r\n  font-size: 9px;\r\n  position: fixed;\r\n  bottom: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 95.5%;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(47, 47, 49);\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.left-nav {\r\n    display: flex;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  width: 100%;\r\n}\r\n\r\nmain {\r\n\r\n}\r\n\r\n.title {\r\n  text-align: center;\r\n  color: #ddd;\r\n}\r\n\r\n.container {\r\n  max-width: 90%;\r\n  width: 120rem;\r\n  margin: 0 auto;\r\n}\r\n\r\nfooter {\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  display: flex;\r\n  height: 52px;\r\n  font-size: 9px;\r\n  position: fixed;\r\n  bottom: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 95.5%;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;;EAGE,sBAAsB;AACxB;;AAEA;EACE,iCAAiC;AACnC;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,aAAa;AACjB;;AAEA;EACE,aAAa;EACb,WAAW;EACX,eAAe;EACf,WAAW;AACb;;AAEA;;AAEA;;AAEA;EACE,kBAAkB;EAClB,WAAW;AACb;;AAEA;EACE,cAAc;EACd,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,WAAW;EACX,eAAe;EACf,aAAa;EACb,YAAY;EACZ,cAAc;EACd,eAAe;EACf,SAAS;EACT,uBAAuB;EACvB,mBAAmB;EACnB,YAAY;AACd","sourcesContent":["*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(47, 47, 49);\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.left-nav {\r\n    display: flex;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  width: 100%;\r\n}\r\n\r\nmain {\r\n\r\n}\r\n\r\n.title {\r\n  text-align: center;\r\n  color: #ddd;\r\n}\r\n\r\n.container {\r\n  max-width: 90%;\r\n  width: 120rem;\r\n  margin: 0 auto;\r\n}\r\n\r\nfooter {\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  display: flex;\r\n  height: 52px;\r\n  font-size: 9px;\r\n  position: fixed;\r\n  bottom: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 95.5%;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -595,6 +595,16 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/assests/logo.png":
+/*!******************************!*\
+  !*** ./src/assests/logo.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "6edcedada22e96252f95.png";
+
 /***/ })
 
 /******/ 	});
@@ -648,6 +658,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -662,6 +684,26 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -679,8 +721,12 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _displayApi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayApi */ "./src/displayApi.js");
+/* harmony import */ var _assests_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assests/logo.png */ "./src/assests/logo.png");
 
 
+
+var navLogo = document.getElementById('logo');
+navLogo.src = _assests_logo_png__WEBPACK_IMPORTED_MODULE_2__;
 _displayApi__WEBPACK_IMPORTED_MODULE_1__["default"].showMovies();
 })();
 
