@@ -13,3 +13,35 @@
     display: flex;
     background-color: aqua;
 }
+
+header {
+  display: flex;
+  background-color: rgb(7, 7, 7);
+  color: #ddd;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+main {
+  background-color: rgb(47, 47, 49);
+}
+
+.container {
+  max-width: 90%;
+  width: 120rem;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: rgb(7, 7, 7);
+  color: #ddd;
+  padding: 1rem 0;
+  display: flex;
+  height: 52px;
+  font-size: 9px;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 95.5%;
+}

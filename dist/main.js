@@ -2,6 +2,73 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/displayApi.js":
+/*!***************************!*\
+  !*** ./src/displayApi.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MovieAPI)
+/* harmony export */ });
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var movieURL = "https://api.tvmaze.com/search/shows?q=the";
+
+var MovieAPI = /*#__PURE__*/_createClass(function MovieAPI() {
+  _classCallCheck(this, MovieAPI);
+});
+
+_defineProperty(MovieAPI, "showMovies", /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+  var res, result, displayMovie;
+  return regeneratorRuntime.wrap(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return fetch(movieURL);
+
+        case 2:
+          res = _context.sent;
+          _context.next = 5;
+          return res.json();
+
+        case 5:
+          result = _context.sent;
+          displayMovie = document.querySelector(".movie-container");
+          result.forEach(function (item) {
+            if (item.show.image !== null) {
+              var div = document.createElement("div");
+              div.classList.add("div-container");
+              div.innerHTML = "<img src=\"".concat(item.show.image.medium, " alt=\"movie-image\">\n            <div class=\"media flex main-space-between\">\n             <li>").concat(item.show.name, "</li>\n            <div>\n              <p> 0 Likes</p>\n            </div>\n            </div>\n            <button id=\"").concat(item.show.id, "\">Comments</button>;\n            ");
+              displayMovie.appendChild(div);
+            }
+          });
+
+        case 8:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _callee);
+})));
+
+
+;
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
@@ -21,7 +88,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;;EAGE,sBAAsB;AACxB;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC","sourcesContent":["*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.left-nav {\r\n    display: flex;\r\n    background-color: aqua;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  width: 100%;\r\n}\r\n\r\nmain {\r\n  background-color: rgb(47, 47, 49);\r\n}\r\n\r\n.container {\r\n  max-width: 90%;\r\n  width: 120rem;\r\n  margin: 0 auto;\r\n}\r\n\r\nfooter {\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  display: flex;\r\n  height: 52px;\r\n  font-size: 9px;\r\n  position: fixed;\r\n  bottom: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 95.5%;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;;EAGE,sBAAsB;AACxB;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,WAAW;EACX,eAAe;EACf,WAAW;AACb;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,cAAc;EACd,aAAa;EACb,cAAc;AAChB;;AAEA;EACE,8BAA8B;EAC9B,WAAW;EACX,eAAe;EACf,aAAa;EACb,YAAY;EACZ,cAAc;EACd,eAAe;EACf,SAAS;EACT,uBAAuB;EACvB,mBAAmB;EACnB,YAAY;AACd","sourcesContent":["*,\r\n*::after,\r\n*::before {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.topnav {\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n\r\n.left-nav {\r\n    display: flex;\r\n    background-color: aqua;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  width: 100%;\r\n}\r\n\r\nmain {\r\n  background-color: rgb(47, 47, 49);\r\n}\r\n\r\n.container {\r\n  max-width: 90%;\r\n  width: 120rem;\r\n  margin: 0 auto;\r\n}\r\n\r\nfooter {\r\n  background-color: rgb(7, 7, 7);\r\n  color: #ddd;\r\n  padding: 1rem 0;\r\n  display: flex;\r\n  height: 52px;\r\n  font-size: 9px;\r\n  position: fixed;\r\n  bottom: 0;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 95.5%;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -611,7 +678,10 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _displayApi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./displayApi */ "./src/displayApi.js");
 
+
+_displayApi__WEBPACK_IMPORTED_MODULE_1__["default"].showMovies();
 })();
 
 /******/ })()
