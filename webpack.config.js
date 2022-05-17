@@ -1,48 +1,41 @@
-const path = require("path");
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    entry: path.resolve(__dirname, 'src/index.js'),
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
-        clean: true,
-    },
-    devtool: 'source-map',
-    devServer: {
-        static: './dist',
-        open: true,
-    },
-    module: {
-        rules: [
-          {
-              test: /\.css$/i,
-              use: [
-                'style-loader',
-                'css-loader'
-              ],
-          },
-          {
-              test: /\.js$/,
-              exclude: /node_modules/,
-              use: {
-                  loader: 'babel-loader',
-                  options: {
-                      presets: ['@babel/preset-env'],
-                  },
-              },
-          },
-          {
-              test: /\.(png|svg|jpg|jpeg|scg|gif)$/i,
-              type: 'asset/resource',
-          }
-        ],
-    },
-    plugins: [
-       new HtmlWebpackPlugin({
-        title: 'Webpack App',
-        template: 'src/index.html',
-       }),
+  mode: 'development',
+  entry: { index: './src/index.js' },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: ['./dist'],
+    watchFiles: ['src/**/*'],
+  },
+  watchOptions: {
+    ignored: /node_modules/,
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|scg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
     ],
-}
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+  },
+};
