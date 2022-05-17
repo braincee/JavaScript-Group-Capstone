@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(47, 47, 49);
+}
+
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -16,14 +20,13 @@
 
 header {
   display: flex;
-  background-color: rgb(7, 7, 7);
   color: #ddd;
   padding: 1rem 0;
   width: 100%;
 }
 
 main {
-  background-color: rgb(47, 47, 49);
+
 }
 
 .container {
@@ -33,7 +36,6 @@ main {
 }
 
 footer {
-  background-color: rgb(7, 7, 7);
   color: #ddd;
   padding: 1rem 0;
   display: flex;
