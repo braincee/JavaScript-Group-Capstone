@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    background-color: rgb(131, 118, 118);
+}
