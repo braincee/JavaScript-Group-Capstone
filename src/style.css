@@ -9,6 +9,11 @@
     justify-content: space-between;
 }
 
+.left-nav {
+    display: flex;
+    background-color: aqua;
+}
+
 main {
-    background-color: rgb(95, 93, 93);
+    background-color: rgb(39, 36, 36);
 }
