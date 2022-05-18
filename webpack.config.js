@@ -31,10 +31,10 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: '/src/assets/',
-              publicPath: '/'
-            }
-          }
-        ]
+              publicPath: '/',
+            },
+          },
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,

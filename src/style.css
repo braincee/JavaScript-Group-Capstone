@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Lato&family=Poppins&display=swap');
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(47, 47, 49);
 }
 
 .topnav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left-nav {
-    display: flex;
+  display: flex;
 }
 
 header {
@@ -34,7 +36,6 @@ header {
 
 footer {
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
   font-weight: 400;
   color: #ddd;
   padding: 1rem 0;
@@ -45,7 +46,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 95.5%;
-} 
+}
 
 .container {
   max-width: 90%;
@@ -59,14 +60,6 @@ main p {
 
 ul {
   list-style: none;
-}
-
-.title {
-  text-align: center;
-  font-size: 4rem;
-  margin: 0;
-  padding-top: 3rem;
-  color: #ddd;
 }
 
 dl {
@@ -153,7 +146,6 @@ h3,
   width: 80%;
   margin: 0 auto;
   top: 50%;
-  background-color: #fff;
   padding: 20px;
   max-width: 50%;
   left: 50%;
@@ -182,6 +174,11 @@ h3,
   display: flex;
   align-items: center;
   height: 3rem;
+}
+
+.likes-container p {
+  font-size: 1.3rem;
+  margin-top: 0;
 }
 
 .description li p {
@@ -250,11 +247,6 @@ h3,
   flex-direction: column;
   align-items: center;
   width: 4rem;
-}
-
-.likes-container p {
-  font-size: 1.3rem;
-  margin-top: 0;
 }
 
 .media {
