@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Lato&family=Poppins&display=swap');
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
 body {
-
+  background-color: rgb(47, 47, 49);
 }
+
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -23,17 +25,22 @@ header {
 }
 
 .title {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
   text-align: center;
   color: #ddd;
 }
 
 footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
   color: #ddd;
   padding: 1rem 0;
   display: flex;
-  height: 52px;
+  height: 72px;
   font-size: 20px;
-  position: fixed;
   bottom: 0;
   justify-content: center;
   align-items: center;
@@ -44,12 +51,6 @@ footer {
   max-width: 90%;
   width: 120rem;
   margin: 0 auto;
-}
-
-main {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgb(47, 47, 49);
 }
 
 main p {

@@ -24,8 +24,17 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|scg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.(png|jpg|gif|json|xml|ico|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '/src/assets/',
+              publicPath: '/'
+            }
+          }
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
