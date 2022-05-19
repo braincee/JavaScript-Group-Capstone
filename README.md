@@ -19,7 +19,7 @@
 
 ## Live Demo 🔗
 
-Visit live demo [here]() 👈 to view
+Visit live demo [here](https://braincee.github.io/JavaScript-Group-Capstone/dist/) 👈 to view
 
 ## Live Presentation 
 
