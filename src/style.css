@@ -88,6 +88,163 @@ ul {
   justify-content: center;
 }
 
+.popup-display {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.popup {
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  top: 50%;
+  padding: 20px;
+  max-width: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow-y: auto;
+  height: 80%;
+  background-color: #303073;
+  background-size: cover;
+}
+
+.popup-image img {
+  max-height: 500px;
+  border-radius: 1rem;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: #ddd;
+}
+
+.details li {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.details span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.likes p {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.summary p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: beige;
+}
+
+.details li p {
+  width: 11rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+}
+
+.fa-times {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button,
+.send-comment {
+  padding: 0.9rem 3rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  background-color: #5252b7;
+  color: #fff;
+  border-radius: 0 10px 0 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #9a9ad5;
+  border-radius: 15px;
+}
+
+.user-name,
+.comment {
+  padding: 0.7rem;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.each-movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  border-radius: 1rem;
+}
+
+.each-movie img {
+  border-radius: 12px;
+}
+
+.each {
+  text-align: center;
+  line-height: 40px;
+  width: 21rem;
+  margin-top: 1rem;
+  color: white;
+}
+
+.each li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+
+.like-icon:hover {
+  cursor: pointer;
+}
+
+.display-comments li {
+  color: rgb(91, 177, 84);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-send {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+
 footer {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
