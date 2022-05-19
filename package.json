@@ -1,7 +1,7 @@
 {
-  "name": "webpack_template",
+  "name": "JavaScript-Group-Capstone",
   "version": "1.0.0",
-  "description": "Webpack template to use as a starting point in projects.",
+  "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -22,13 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fherrerao/webpack_template.git"
+    "url": "git@github.com:braincee/JavaScript-Group-Capstone.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fherrerao/webpack_template/issues"
+    "url": "https://github.com/braincee/JavaScript-Group-Capstone/issues"
   },
   "homepage": "https://fherrerao.github.io/Capstone-Group-Project",
   "dependencies": {
@@ -43,6 +43,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@babel/preset-env": "^7.17.12",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^28.1.0",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
@@ -51,7 +52,7 @@
     "gh-pages": "^3.2.3",
     "hint": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "jest": "^27.4.7",
+    "jest": "^27.5.1",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
