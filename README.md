@@ -12,9 +12,9 @@
 - Webpack
 
 
-## Screenshot
+## WEBSITE MOCKUP
 
-![](./all-devices-black%20(2).png)
+![](./laptop%20(2).png)
 
 ## Live Demo 🔗
 
