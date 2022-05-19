@@ -4,15 +4,16 @@
 
 > This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 user interfaces.
 
-## Built With
+## Built With 🛠️
 
-- HTML
-- CSS
-- Javascript
-- Webpack
+ Languages: HTML, Sass and JavaScript
+ Linters: Lighthouse, Webhint, Stylelint and ESLint
+ Module Bundler: Webpack
+ Module Bundler Loaders: Style, CSS 
+ APIs: TVmaze API and Involvement API
+ Code Editor: VS Code
 
-
-## WEBSITE MOCKUP
+## WEBSITE MOCKUP 💻
 
 ![](./laptop%20(2).png)
 
