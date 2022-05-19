@@ -16,9 +16,13 @@
 
 ![](./countdown.png)
 
-## Live Demo
+## Live Demo 🔗
 
-Visit [here]() to view
+Visit live demo [here]() 👈 to view
+
+## Live Presentation 
+
+Click [here]() to see live presentaion
 
 ## Getting Started
 

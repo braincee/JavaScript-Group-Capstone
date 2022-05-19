@@ -35,7 +35,7 @@ export default class Movies {
         count += 1;
       }
       const title = document.querySelector('.title');
-      if (title) title.textContent = `Top (${count}) Rating Movies `;
+      if (title) title.textContent = `Top (${count})Rating Movies `;
     });
 
     return count;
