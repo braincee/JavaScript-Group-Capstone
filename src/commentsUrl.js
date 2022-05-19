@@ -6,9 +6,8 @@ export default class commentsUrl {
     const response = await fetch(`${this.commentsUrl}?item_id=${id}`);
 
     const data = await response.json();
-    return data
+    return data;
   };
-
 
     static setComments = async (id, username, comment) => {
       const response = await fetch(this.commentsUrl, {
@@ -27,7 +26,6 @@ export default class commentsUrl {
       return data;
     };
 
-    
   static counterComments = (data) => {
     let count = 0;
     for (let i = 0; i < data.length; i += 1) {

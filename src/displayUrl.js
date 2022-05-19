@@ -64,7 +64,7 @@ export default class Movies {
       const display = document.querySelector('.display-comments');
       const count = document.querySelector('.comment-count');
       count.textContent = `Comments (${commentsUrl.counterComments(data)})`;
-      display.innerHTML = "";
+      display.innerHTML = '';
       data.forEach((item) => {
         const commentList = document.createElement('li');
 
