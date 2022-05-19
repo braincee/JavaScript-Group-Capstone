@@ -18,8 +18,8 @@ export default class fetchApi {
     };
 
     static getLikes = async () => {
-      const response = await fetch(this.likeUrl);
-      const data = await response.json();
+      const res = await fetch(this.likeUrl);
+      const data = await res.json();
       return data;
     };
 }
