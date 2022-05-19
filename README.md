@@ -1,20 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# CountDown Movies
+# COUNTDOWN MOVIES
 
-> This is our first pair-programming project in Module 2.
+> This educational project is to build our own web application based on an external API. We selected an API that provides data about a topic that we like and built the web app around it. The web app will have 2 user interfaces.
 
-## Built With
+## Built With 🛠️
 
-- HTML
-- CSS
-- Javascript
-- Webpack
+ Languages: HTML, Sass and JavaScript
+ Linters: Lighthouse, Webhint, Stylelint and ESLint
+ Module Bundler: Webpack
+ Module Bundler Loaders: Style, CSS 
+ APIs: TVmaze API and Involvement API
+ Code Editor: VS Code
 
+## WEBSITE MOCKUP 💻
 
-## Screenshot
-
-![](./countdown.png)
+![](./laptop%20(2).png)
 
 ## Live Demo 🔗
 
@@ -22,7 +23,7 @@ Visit live demo [here]() 👈 to view
 
 ## Live Presentation 
 
-Click [here]() to see live presentaion
+Click [here](https://drive.google.com/file/d/1yaGI6xswUWy5UKqW-7RR05TqYe1vsBBH/view?usp=sharing) to see live presentaion
 
 ## Getting Started
 
@@ -59,7 +60,7 @@ npm run build
 npm start
 ```
 
-- You can also check out this API documentation [link]()
+- You can also check out this API documentation [link](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270)
 
 ### Environment Prerequisites
 

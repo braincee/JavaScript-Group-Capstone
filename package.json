@@ -1,5 +1,5 @@
 {
-  "name": "JavaScript-Group-Capstone",
+  "name": "javascript-group-capstone",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/braincee/JavaScript-Group-Capstone/issues"
   },
-  "homepage": "https://fherrerao.github.io/Capstone-Group-Project",
+  "homepage": "https://github.com/braincee/JavaScript-Group-Capstone.git/",
   "dependencies": {
     "cross-fetch": "^3.1.5",
     "lodash": "^4.17.21",
