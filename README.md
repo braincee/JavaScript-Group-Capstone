@@ -11,9 +11,14 @@
 - Javascript
 - Webpack
 
+
+## Screenshot
+
+![](./countdown.png)
+
 ## Live Demo
 
-Visit [here](https://ramrod433.github.io/Leaderboard/dist/index.html) to view
+Visit [here]() to view
 
 ## Getting Started
 
@@ -71,7 +76,6 @@ Code editor: VsCode or any code editor of your choice
 - GitHub: [@braincee](https://github.com/braincee)
 - Twitter: [@annor0543](https://twitter.com/annor0543)
 - LinkedIn: [Stephen Annor](https://www.linkedin.com/in/kwesi-appiah-1387801a1/)
-  git@github.com:braincee/JavaScript-Group-Capstone.git
 
 ## 🤝 Contributing
 

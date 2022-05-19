@@ -2,7 +2,7 @@ import fetchApi from './fetchApi.js';
 import commentsUrl from './commentsUrl.js';
 
 export default class Movies {
-  static url = 'https://api.tvmaze.com/search/shows?q=boys';
+  static url = 'https://api.tvmaze.com/search/shows?q=adventure';
 
   static clickLikes = () => {
     const likeIcon = document.querySelectorAll('.like-icon');
@@ -35,7 +35,7 @@ export default class Movies {
         count += 1;
       }
       const title = document.querySelector('.title');
-      if (title) title.textContent = `Top (${count})Rating Movies `;
+      if (title) title.textContent = `Top (${count}) Rating Movies `;
     });
 
     return count;
