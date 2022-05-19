@@ -40,6 +40,24 @@ export default class Movies {
     return count;
   };
 
+  static displayComment = (id) => {
+    const username = document.querySelector('.user-name');
+    const comment = document.querySelector('.comment');
+    const buttonAdd = document.querySelector('.add-comment');
+    buttonAdd.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      commentsUrl.setComments(id, username.value, comment.value)
+        .then((data) => {
+          if (data === "Created") {
+            this.countComment(id);
+            username.value = "";
+            comment.value = "";
+          }
+        });
+    });
+  };
+
   static displayMovies = async () => {
     const response = await fetch(this.url);
     const data = await response.json();
