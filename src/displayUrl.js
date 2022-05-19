@@ -42,5 +42,5 @@ export default class Movies {
         movieContainer.appendChild(div);
       }
     });
-    this.clickLikes();
-    this.newLikes();
+  }
+}
