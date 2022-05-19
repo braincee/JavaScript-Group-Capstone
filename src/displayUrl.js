@@ -1,13 +1,14 @@
-import fetchApi from './fetchApi.js';
-import commentsUrl from './commentsUrl.js';
+import fetchApi from "./fetchApi.js";
+import commentsUrl from "./commentsUrl.js";
 
 export default class Movies {
-  static url = 'https://api.tvmaze.com/search/shows?q=boys';
+  static url = "https://api.tvmaze.com/search/shows?q=boys";
+
 
   static clickLikes = () => {
-    const likeIcon = document.querySelectorAll('.like-icon');
+    const likeIcon = document.querySelectorAll(".like-icon");
     likeIcon.forEach((element) => {
-      element.addEventListener('click', () => {
+      element.addEventListener("click", () => {
         fetchApi.setLikes(parseInt(element.id, 10)).then(() => {
           this.newLikes();
         });
@@ -32,7 +33,7 @@ export default class Movies {
     let count = 0;
     data.forEach((item) => {
       if (item.show.image !== null) {
-        count += 1;
+        count = count + 1;
       }
       const title = document.querySelector('.title');
       if (title) title.textContent = `Top (${count})Rating Movies `;
@@ -45,15 +46,15 @@ export default class Movies {
     const username = document.querySelector('.user-name');
     const comment = document.querySelector('.comment');
     const buttonAdd = document.querySelector('.add-comment');
-    buttonAdd.addEventListener('click', (e) => {
+    buttonAdd.addEventListener("click", (e) => {
       e.preventDefault();
 
       commentsUrl.setComments(id, username.value, comment.value)
         .then((data) => {
-          if (data === 'Created') {
+          if (data === "Created") {
             this.countComment(id);
-            username.value = '';
-            comment.value = '';
+            username.value = "";
+            comment.value = "";
           }
         });
     });
@@ -64,7 +65,7 @@ export default class Movies {
       const display = document.querySelector('.display-comments');
       const count = document.querySelector('.comment-count');
       count.textContent = `Comments (${commentsUrl.counterComments(data)})`;
-      display.innerHTML = '';
+      display.innerHTML = "";
       data.forEach((item) => {
         const commentList = document.createElement('li');
 
@@ -101,11 +102,10 @@ export default class Movies {
     const commentBtn = document.querySelectorAll('.button');
 
     commentBtn.forEach((button) => {
-      button.addEventListener('click', (event) => {
-        const id = event.target.getAttribute('id');
+      button.addEventListener("click", (event) => {
+        const id = event.target.getAttribute("id");
         const popUp = data.filter(
-          (item) => item.show.id === parseInt(id, 10),
-        )[0].show;
+          (item) => item.show.id === parseInt(id, 10))[0].show;
         const popupDisplay = `<div class="popup-display">
         <div class="popup">
           <div>
@@ -123,11 +123,11 @@ export default class Movies {
               
               <ul class="details">
                 <li><p>Genre:</p> <span>${
-                  popUp.genres.toString() || 'No available'}</span></li>
-                <li><p>Language:</p> <span>${popUp.language || 'No available'}</span></li>
-                <li> <p>Premiered:</p> <span>${popUp.premiered || 'No available'}</span></li>
-                <li> <p>Rating:</p> <span>${popUp.rating.average || 'No available'}</span></li>
-                <li> <p>Official site:</p> <span><a class="link" href="${popUp.officialSite}">Watch</a></span></li>
+                  popUp.genres.toString() || "No available" }</span></li>
+                <li><p>Language:</p> <span>${ popUp.language || "No available" }</span></li>
+                <li> <p>Premiered:</p> <span>${ popUp.premiered || "No available" }</span></li>
+                <li> <p>Rating:</p> <span>${ popUp.rating.average || "No available" }</span></li>
+                <li> <p>Official site:</p> <span><a class="link" href="${ popUp.officialSite }">Watch</a></span></li>
               </ul>  
             </div>
             <div class="summary">
@@ -151,11 +151,11 @@ export default class Movies {
           </div>
         </div>
       </div>`;
-        document.body.insertAdjacentHTML('beforeend', popupDisplay);
+        document.body.insertAdjacentHTML("beforeend", popupDisplay);
 
         const timesBtn = document.querySelectorAll('.fa-times');
         timesBtn.forEach((item) => {
-          item.addEventListener('click', () => {
+          item.addEventListener("click", () => {
             document.querySelector('.popup-display').remove();
           });
         });

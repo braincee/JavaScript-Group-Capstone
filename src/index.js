@@ -4,3 +4,4 @@ import fetchApi from './fetchApi.js';
 
 Movies.displayMovies();
 fetchApi.getLikes();
+Movies.counterMovies();
