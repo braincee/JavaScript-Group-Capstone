@@ -1,4 +1,5 @@
 import fetchApi from './fetchApi.js';
+import commentsUrl from './commentsUrl.js';
 
 export default class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=boys';
@@ -44,15 +45,15 @@ export default class Movies {
     const username = document.querySelector('.user-name');
     const comment = document.querySelector('.comment');
     const buttonAdd = document.querySelector('.add-comment');
-    buttonAdd.addEventListener("click", (e) => {
+    buttonAdd.addEventListener('click', (e) => {
       e.preventDefault();
 
       commentsUrl.setComments(id, username.value, comment.value)
         .then((data) => {
-          if (data === "Created") {
+          if (data === 'Created') {
             this.countComment(id);
-            username.value = "";
-            comment.value = "";
+            username.value = '';
+            comment.value = '';
           }
         });
     });
@@ -88,7 +89,8 @@ export default class Movies {
       button.addEventListener('click', (event) => {
         const id = event.target.getAttribute('id');
         const popUp = data.filter(
-          (item) => item.show.id === parseInt(id, 10),)[0].show;
+          (item) => item.show.id === parseInt(id, 10),
+        )[0].show;
         const popupDisplay = `<div class="popup-display">
         <div class="popup">
           <div>
