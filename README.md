@@ -14,7 +14,7 @@
 
 ## Screenshot
 
-![](./countdown.png)
+![](./all-devices-black%20(2).png)
 
 ## Live Demo 🔗
 
@@ -22,7 +22,7 @@ Visit live demo [here]() 👈 to view
 
 ## Live Presentation 
 
-Click [here]() to see live presentaion
+Click [here](https://drive.google.com/file/d/1yaGI6xswUWy5UKqW-7RR05TqYe1vsBBH/view?usp=sharing) to see live presentaion
 
 ## Getting Started
 
