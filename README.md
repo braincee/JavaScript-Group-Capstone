@@ -23,7 +23,7 @@ Visit live demo [here](https://braincee.github.io/JavaScript-Group-Capstone/dist
 
 ## Live Presentation 
 
-Click [here](https://drive.google.com/file/d/1yaGI6xswUWy5UKqW-7RR05TqYe1vsBBH/view?usp=sharing) to see live presentaion
+Click [here](https://drive.google.com/file/d/11xA6HLdkbyWz1YV1Gi0aZQ4MDr5Jqt_T/view?usp=sharing) to see live presentaion
 
 ## Getting Started
 
