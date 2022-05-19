@@ -1,3 +1,5 @@
+import fetch from 'cross-fetch';
+
 import fetchApi from './fetchApi.js';
 import commentsUrl from './commentsUrl.js';
 
