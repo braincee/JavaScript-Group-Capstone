@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Lato&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303073;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-nav {
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  font-size: 25px;
+  position: relative;
+  margin-top: -70px;
+}
+
+.right-nav input[type=text] {
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.big {
+  font-size: 70px;
+  color: #5252b7;
+}
+
+.big-2 {
+  color: #5252b7;
+}
+
+.middle {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+}
+
+header {
+  display: flex;
+  color: #ddd;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(167, 202, 40);
+}
+
+.container {
+  max-width: 90%;
+  width: 120rem;
+  margin: 0 auto;
+}
+
+main p {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-center {
+  justify-content: center;
+}
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ddd;
+  padding: 1rem 0;
+  display: flex;
+  height: 72px;
+  font-size: 20px;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 95.5%;
+}
